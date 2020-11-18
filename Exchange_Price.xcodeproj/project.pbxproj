@@ -16,6 +16,7 @@
 		8C46433C2555BCB4004AD033 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46433B2555BCB4004AD033 /* Constants.swift */; };
 		8C46433F2555BD5C004AD033 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46433E2555BD5C004AD033 /* Constraints.swift */; };
 		8C4EECB22559A5B500B1BF33 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EECB12559A5B500B1BF33 /* ViewCode.swift */; };
+		8C6588DD2561C07700CC6A91 /* ModelExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6588DC2561C07700CC6A91 /* ModelExchange.swift */; };
 		8C90CB1F255AFA5B0045281B /* NetworkServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CB1E255AFA5B0045281B /* NetworkServise.swift */; };
 		8C90CB22255AFAE00045281B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CB21255AFAE00045281B /* API.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		8C46433B2555BCB4004AD033 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8C46433E2555BD5C004AD033 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		8C4EECB12559A5B500B1BF33 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		8C6588DC2561C07700CC6A91 /* ModelExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExchange.swift; sourceTree = "<group>"; };
 		8C90CB1E255AFA5B0045281B /* NetworkServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServise.swift; sourceTree = "<group>"; };
 		8C90CB21255AFAE00045281B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,8 +97,18 @@
 			isa = PBXGroup;
 			children = (
 				8C0AAE292559C9590060F361 /* ModelPrice.swift */,
+				8C6588DC2561C07700CC6A91 /* ModelExchange.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8C16AE432565722600D2ACC5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8C90CB1E255AFA5B0045281B /* NetworkServise.swift */,
+				8C90CB21255AFAE00045281B /* API.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8C4643172555ADA0004AD033 = {
@@ -119,13 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				8C0AAE272559C9190060F361 /* App */,
+				8C0AAE262559C90B0060F361 /* Assets */,
 				8C0AAE242559C8EC0060F361 /* Controller */,
 				8C0AAE232559C8E20060F361 /* View */,
 				8C0AAE282559C92B0060F361 /* Model */,
 				8C0AAE252559C8FC0060F361 /* Helper */,
-				8C0AAE262559C90B0060F361 /* Assets */,
-				8C90CB1E255AFA5B0045281B /* NetworkServise.swift */,
-				8C90CB21255AFAE00045281B /* API.swift */,
+				8C16AE432565722600D2ACC5 /* Helpers */,
 			);
 			path = Exchange_Price;
 			sourceTree = "<group>";
@@ -205,6 +216,7 @@
 				8C0AAE2A2559C9590060F361 /* ModelPrice.swift in Sources */,
 				8C46433F2555BD5C004AD033 /* Constraints.swift in Sources */,
 				8C4643262555ADA0004AD033 /* SceneDelegate.swift in Sources */,
+				8C6588DD2561C07700CC6A91 /* ModelExchange.swift in Sources */,
 				8C46433C2555BCB4004AD033 /* Constants.swift in Sources */,
 				8C90CB22255AFAE00045281B /* API.swift in Sources */,
 				8C4EECB22559A5B500B1BF33 /* ViewCode.swift in Sources */,

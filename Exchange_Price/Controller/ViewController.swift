@@ -9,6 +9,11 @@ import UIKit
 
 class ViewController: UIViewController{
 
+    
+    var delegate: Networking?
+    var symbol: String? = "AAPL"
+
+    let networkServise = NetworkServise()
     let model = ModelPrice()
     var shareView = ViewCode()
 
@@ -16,6 +21,7 @@ class ViewController: UIViewController{
     override func loadView() {
            view = shareView
        }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,60 +30,36 @@ class ViewController: UIViewController{
         shareView.pickerView.dataSource = self
         shareView.pickerView.delegate = self
         
-        requestQuoteUpdete()
-    }
-    
-    
-    private func requestQute(for symbol: String) {
         
-        let token = "pk_48df081355d64e2b8973505cb98d3d3d"
         
-        guard let url = URL(string: "https://cloud.iexapis.com/stable/stock/\(symbol)/quote?token=\(token)") else {
-            return
-        }
-        let dataTask = URLSession.shared.dataTask(with: url) { (data,response,error) in
-            if let data = data,
-               (response as? HTTPURLResponse)?.statusCode == 200,
-               error == nil {
-                self.parseQuote(from: data)
-            } else {
-                print("Network error")
-            }
-        }
-        dataTask.resume()
-        
-    }
-    
-    private func parseQuote(from data: Data) {
-        do {
-            let jsonObject = try JSONSerialization.jsonObject(with: data)
-            guard
-                let json = jsonObject as? [String: Any],
-                let companyName = json["companyName"] as? String,
-                let companySymbol = json["symbol"] as? String,
-                let price = json["latestPrice"] as? Double,
-                let priceChange = json["change"] as? Double else { return print("invalid JSON") }
-            
-            
+        delegate = networkServise
+        delegate?.request(for: symbol!, complation: { (modelEcxchange) in
             DispatchQueue.main.async { [ weak self ] in
-                self?.displayStockInfo(companyName: companyName, companySymbol: companySymbol, price: price, priceChange: priceChange)
-
+                self?.displayStockInfo(model: modelEcxchange)
             }
-        
-        } catch {
-            print("JSON parssing error " + error.localizedDescription)
-        }
+        })
+       
     }
-    private func displayStockInfo(companyName: String,
-                                  companySymbol: String,
-                                  price:Double,
-                                  priceChange:Double) {
-        shareView.activityIndicator.stopAnimating()
-        shareView.set(companyNameSet: companyName,
-                      symbolSet: companySymbol,
-                      priceNameSet: price,
-                      priceChangeNameSet: priceChange )
+    
+    private func requestQute(for str: String) {
+        symbol = str
+        delegate?.request(for: symbol!, complation: { (modelEcxchange) in
+            DispatchQueue.main.async { [ weak self ] in
+                self?.displayStockInfo(model: modelEcxchange)
+            }
+        })
         
+    }
+    
+
+    func displayStockInfo(model: ModelExchange) {
+        shareView.activityIndicator.stopAnimating()
+        shareView.set(
+                      companyNameSet: model.companyName,
+                      symbolSet: model.symbol,
+                      priceNameSet: model.latestPrice,
+                      priceChangeNameSet: model.change)
+ 
     }
 }
 
@@ -101,14 +83,19 @@ extension ViewController: UIPickerViewDelegate {
     }
     
     private func requestQuoteUpdete(){
-        shareView.activityIndicator.startAnimating()
-        shareView.set(companyNameSet: "",symbolSet: "",priceNameSet: 0,priceChangeNameSet: 0)
         
-        let selectedRow = shareView.pickerView.selectedRow(inComponent: 0)
-        let selectedSymbol = Array(model.companies.values)[selectedRow]
-        requestQute(for: selectedSymbol)
+        shareView.activityIndicator.startAnimating()
+               shareView.set(companyNameSet: "",
+                             symbolSet: "",
+                             priceNameSet: 0,
+                             priceChangeNameSet: 0)
+                       
+                let selectedRow = shareView.pickerView.selectedRow(inComponent: 0)
+                let selectedSymbol = Array(model.companies.values)[selectedRow]
+                requestQute(for: selectedSymbol)
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
         requestQuoteUpdete()
         
     }
