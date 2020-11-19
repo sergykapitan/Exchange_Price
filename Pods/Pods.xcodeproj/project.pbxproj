@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036B99C14B0EC04BF4263087F9BE93BA /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90643B9C03E7663B9A9A0C4E20CCBC78 /* UIView+.swift */; };
+		1428B3D968AB9488076F392173872BA1 /* NeumorphismTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662FB4C0E02A29AD432C772272D8D9A /* NeumorphismTabBar.swift */; };
+		1D9E463C22267F1AB80151891ED2A58A /* NeumorphismAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC1C94B72B62999283CB081DEAADF17 /* NeumorphismAppearance.swift */; };
+		260224045BA61CE1FF2DC394E8965D3F /* NeumorphismLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549EFB2590A286A57BB181C2AA261A0 /* NeumorphismLabel.swift */; };
+		5524976DE8088139E319C37747540E62 /* NeumorphismShadowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8A9FA6F9BAADAD2C9B0DF08AF8E8C /* NeumorphismShadowType.swift */; };
+		695F7E93D31CE3B7B986CA7EC3167EB2 /* NeumorphismTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB0DA7F6EC2859A025EFF848E37B926 /* NeumorphismTabBarItem.swift */; };
+		6A064D8937DE6D6256E921E41F3A964F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		852C58D844EC8EF6BED18CA4E440910A /* NeumorphismTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F145C3607255ECA663441E934ED930 /* NeumorphismTabView.swift */; };
+		8859A0F50ADF9F02698C25FA9F0F5809 /* NeumorphismType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5893AE9E2E82216F1D72EBD8F443EF95 /* NeumorphismType.swift */; };
+		8D24ADBB82DD49328ED35D57AE243FBC /* NeumorphismProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C70C0A8A68C38C7B900A4981777028 /* NeumorphismProgressView.swift */; };
+		91E6FCD1E53AD57F8E97D59B4F4921A3 /* NeumorphismTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6F98437D4A1391E88A7FAAC321C04C /* NeumorphismTextView.swift */; };
+		96E4B0BCBA0436E3EE1A56B23F0698CB /* NeumorphismCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F92B5BEF8371F0A13829A65515696C /* NeumorphismCompatible.swift */; };
+		9B2DD3AD64D47F9154179717272420DB /* Pods-Exchange_Price-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F97906FAF3C28EB71BF5B26150041523 /* Pods-Exchange_Price-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2C20F0152D3C23D856AF283AD6B4E42 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0257D4FDEB9CB56848E6A82E7E785F72 /* UIColor+.swift */; };
+		A2DD1FAA7BB14AE27B554ED08E97FBD8 /* NeumorphismKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBEA5827DBBA97E9A736E14F5415CDE /* NeumorphismKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A34A1976049CC50DAFC92DDBCC0CC40D /* NeumorphismExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FD6771F4A09E0AA2855BE25CA08AE1 /* NeumorphismExtension.swift */; };
+		C1F80307B8CEBCC4F078371CE84B9622 /* Pods-Exchange_Price-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD452D369E142595DB70E7406E4B2D /* Pods-Exchange_Price-dummy.m */; };
+		E56715509929313C42EFBCFD1717F70A /* NeumorphismKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FA44D233EB58A1A67A1E28F9F92FB833 /* NeumorphismKit-dummy.m */; };
+		EE45393F4E02D0BADC98E67CC8C75829 /* NeumorphismTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E8E5CD1CD692FD94D2D01AFEB1659F /* NeumorphismTextField.swift */; };
+		F405FB3B2299EEB647401460095E34E8 /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF8548FAD29A978673E0CBE260D48D5E /* Array+.swift */; };
+		F48302C4C689101A54DE96E249258192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FB0926EB24F7D383D25338210F0676C5 /* NeumorphismTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E555FC8C34C0C7E005484FD093DE6D0 /* NeumorphismTabBarController.swift */; };
+		FC330E192FF5835A2CDEE1142D96B785 /* NeumorphismKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D379A0CEFADFFE8ABAA72AA467B4C53 /* NeumorphismKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFBABA6142DA9AA3A31842DB368F6D47 /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34B4B19AC2E89AD4F0DFE81E7DBCCA3 /* NeumorphismButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FCE3E9FB1A99B1C6865BE6791C2D9CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9D50BC3A9E12777AC29651A20111CD;
+			remoteInfo = NeumorphismKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0257D4FDEB9CB56848E6A82E7E785F72 /* UIColor+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+.swift"; path = "Sources/Extensions/UIColor+.swift"; sourceTree = "<group>"; };
+		04F92B5BEF8371F0A13829A65515696C /* NeumorphismCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismCompatible.swift; path = Sources/Views/Neumorphism/Base/NeumorphismCompatible.swift; sourceTree = "<group>"; };
+		0547E68F7655F401C8A7353DF6D8AEAF /* Pods-Exchange_Price-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Exchange_Price-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0762FB02BA14AC301410566F21399A4A /* Pods-Exchange_Price.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Exchange_Price.debug.xcconfig"; sourceTree = "<group>"; };
+		0AB0DA7F6EC2859A025EFF848E37B926 /* NeumorphismTabBarItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTabBarItem.swift; path = Sources/Views/Neumorphism/Components/TabBar/NeumorphismTabBarItem.swift; sourceTree = "<group>"; };
+		2CBEA5827DBBA97E9A736E14F5415CDE /* NeumorphismKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NeumorphismKit.h; path = Sources/NeumorphismKit.h; sourceTree = "<group>"; };
+		2E557316A3A76019808D5748E7087D85 /* Pods-Exchange_Price-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Exchange_Price-Info.plist"; sourceTree = "<group>"; };
+		337EA9C56B932332665E0616D2A69456 /* NeumorphismKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NeumorphismKit.modulemap; sourceTree = "<group>"; };
+		3D379A0CEFADFFE8ABAA72AA467B4C53 /* NeumorphismKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeumorphismKit-umbrella.h"; sourceTree = "<group>"; };
+		43E8E5CD1CD692FD94D2D01AFEB1659F /* NeumorphismTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTextField.swift; path = Sources/Views/Neumorphism/Components/NeumorphismTextField.swift; sourceTree = "<group>"; };
+		4E555FC8C34C0C7E005484FD093DE6D0 /* NeumorphismTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTabBarController.swift; path = Sources/Views/Neumorphism/Components/NeumorphismTabBarController.swift; sourceTree = "<group>"; };
+		5893AE9E2E82216F1D72EBD8F443EF95 /* NeumorphismType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismType.swift; path = Sources/Views/Neumorphism/Base/NeumorphismType.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73F8A9FA6F9BAADAD2C9B0DF08AF8E8C /* NeumorphismShadowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismShadowType.swift; path = Sources/Views/Neumorphism/Base/NeumorphismShadowType.swift; sourceTree = "<group>"; };
+		7549EFB2590A286A57BB181C2AA261A0 /* NeumorphismLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismLabel.swift; path = Sources/Views/Neumorphism/Components/NeumorphismLabel.swift; sourceTree = "<group>"; };
+		8FBBB6746DBE15F93ADB87EFDD39ECC1 /* Pods-Exchange_Price.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Exchange_Price.release.xcconfig"; sourceTree = "<group>"; };
+		90643B9C03E7663B9A9A0C4E20CCBC78 /* UIView+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+.swift"; path = "Sources/Extensions/UIView+.swift"; sourceTree = "<group>"; };
+		909EE0D28478E15947615A2D00112F6B /* NeumorphismKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeumorphismKit.release.xcconfig; sourceTree = "<group>"; };
+		97DD452D369E142595DB70E7406E4B2D /* Pods-Exchange_Price-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Exchange_Price-dummy.m"; sourceTree = "<group>"; };
+		9BC1C94B72B62999283CB081DEAADF17 /* NeumorphismAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismAppearance.swift; path = Sources/Views/Neumorphism/Base/NeumorphismAppearance.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8ABE3C90F867DAEA77B9F5EEAFBD9BE /* Pods-Exchange_Price-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Exchange_Price-frameworks.sh"; sourceTree = "<group>"; };
+		B3F145C3607255ECA663441E934ED930 /* NeumorphismTabView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTabView.swift; path = Sources/Views/Neumorphism/Components/TabBar/NeumorphismTabView.swift; sourceTree = "<group>"; };
+		B5C70C0A8A68C38C7B900A4981777028 /* NeumorphismProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismProgressView.swift; path = Sources/Views/Neumorphism/Components/NeumorphismProgressView.swift; sourceTree = "<group>"; };
+		B6FD6771F4A09E0AA2855BE25CA08AE1 /* NeumorphismExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismExtension.swift; path = Sources/Views/Neumorphism/Base/NeumorphismExtension.swift; sourceTree = "<group>"; };
+		C312976057D5E9D02F0C9B5949868937 /* NeumorphismKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NeumorphismKit.framework; path = NeumorphismKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA6B9D01669ADF0CCFF85A4D185C9F6A /* Pods-Exchange_Price-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Exchange_Price-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF8548FAD29A978673E0CBE260D48D5E /* Array+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+.swift"; path = "Sources/Extensions/Array+.swift"; sourceTree = "<group>"; };
+		CFD2B9AE8288C4FA1B739AEB85901B84 /* NeumorphismKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeumorphismKit.debug.xcconfig; sourceTree = "<group>"; };
+		D34B4B19AC2E89AD4F0DFE81E7DBCCA3 /* NeumorphismButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismButton.swift; path = Sources/Views/Neumorphism/Components/NeumorphismButton.swift; sourceTree = "<group>"; };
+		D662FB4C0E02A29AD432C772272D8D9A /* NeumorphismTabBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTabBar.swift; path = Sources/Views/Neumorphism/Components/TabBar/NeumorphismTabBar.swift; sourceTree = "<group>"; };
+		DC5A5AB895348FF0B9ABA8BA3C99F365 /* NeumorphismKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NeumorphismKit-Info.plist"; sourceTree = "<group>"; };
+		DD6F98437D4A1391E88A7FAAC321C04C /* NeumorphismTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeumorphismTextView.swift; path = Sources/Views/Neumorphism/Components/NeumorphismTextView.swift; sourceTree = "<group>"; };
+		E11F49FA05538415131B048B56F317D4 /* NeumorphismKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeumorphismKit-prefix.pch"; sourceTree = "<group>"; };
+		E2B97BCB46797317AB9E57997A4C5CC0 /* Pods-Exchange_Price.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Exchange_Price.modulemap"; sourceTree = "<group>"; };
+		F97906FAF3C28EB71BF5B26150041523 /* Pods-Exchange_Price-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Exchange_Price-umbrella.h"; sourceTree = "<group>"; };
+		FA44D233EB58A1A67A1E28F9F92FB833 /* NeumorphismKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NeumorphismKit-dummy.m"; sourceTree = "<group>"; };
+		FBDBEC57C185647F0A19A46D2DA1B941 /* Pods_Exchange_Price.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Exchange_Price.framework; path = "Pods-Exchange_Price.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A6299B2869819DF18333625F3EE82CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A064D8937DE6D6256E921E41F3A964F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBE4E430DF416ADF987931B7E29E18A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48302C4C689101A54DE96E249258192 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3051BB204DF6AD8858BCEF5F586377F9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73A2BDF2EA209CA1469735C8D8B8377D /* Pods-Exchange_Price */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		73A2BDF2EA209CA1469735C8D8B8377D /* Pods-Exchange_Price */ = {
+			isa = PBXGroup;
+			children = (
+				E2B97BCB46797317AB9E57997A4C5CC0 /* Pods-Exchange_Price.modulemap */,
+				0547E68F7655F401C8A7353DF6D8AEAF /* Pods-Exchange_Price-acknowledgements.markdown */,
+				CA6B9D01669ADF0CCFF85A4D185C9F6A /* Pods-Exchange_Price-acknowledgements.plist */,
+				97DD452D369E142595DB70E7406E4B2D /* Pods-Exchange_Price-dummy.m */,
+				A8ABE3C90F867DAEA77B9F5EEAFBD9BE /* Pods-Exchange_Price-frameworks.sh */,
+				2E557316A3A76019808D5748E7087D85 /* Pods-Exchange_Price-Info.plist */,
+				F97906FAF3C28EB71BF5B26150041523 /* Pods-Exchange_Price-umbrella.h */,
+				0762FB02BA14AC301410566F21399A4A /* Pods-Exchange_Price.debug.xcconfig */,
+				8FBBB6746DBE15F93ADB87EFDD39ECC1 /* Pods-Exchange_Price.release.xcconfig */,
+			);
+			name = "Pods-Exchange_Price";
+			path = "Target Support Files/Pods-Exchange_Price";
+			sourceTree = "<group>";
+		};
+		97626987A631FFDE167B07AF61E6D7E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				337EA9C56B932332665E0616D2A69456 /* NeumorphismKit.modulemap */,
+				FA44D233EB58A1A67A1E28F9F92FB833 /* NeumorphismKit-dummy.m */,
+				DC5A5AB895348FF0B9ABA8BA3C99F365 /* NeumorphismKit-Info.plist */,
+				E11F49FA05538415131B048B56F317D4 /* NeumorphismKit-prefix.pch */,
+				3D379A0CEFADFFE8ABAA72AA467B4C53 /* NeumorphismKit-umbrella.h */,
+				CFD2B9AE8288C4FA1B739AEB85901B84 /* NeumorphismKit.debug.xcconfig */,
+				909EE0D28478E15947615A2D00112F6B /* NeumorphismKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NeumorphismKit";
+			sourceTree = "<group>";
+		};
+		97F68E51B25E336A0D99CC53670D23C8 /* NeumorphismKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF8548FAD29A978673E0CBE260D48D5E /* Array+.swift */,
+				9BC1C94B72B62999283CB081DEAADF17 /* NeumorphismAppearance.swift */,
+				D34B4B19AC2E89AD4F0DFE81E7DBCCA3 /* NeumorphismButton.swift */,
+				04F92B5BEF8371F0A13829A65515696C /* NeumorphismCompatible.swift */,
+				B6FD6771F4A09E0AA2855BE25CA08AE1 /* NeumorphismExtension.swift */,
+				2CBEA5827DBBA97E9A736E14F5415CDE /* NeumorphismKit.h */,
+				7549EFB2590A286A57BB181C2AA261A0 /* NeumorphismLabel.swift */,
+				B5C70C0A8A68C38C7B900A4981777028 /* NeumorphismProgressView.swift */,
+				73F8A9FA6F9BAADAD2C9B0DF08AF8E8C /* NeumorphismShadowType.swift */,
+				D662FB4C0E02A29AD432C772272D8D9A /* NeumorphismTabBar.swift */,
+				4E555FC8C34C0C7E005484FD093DE6D0 /* NeumorphismTabBarController.swift */,
+				0AB0DA7F6EC2859A025EFF848E37B926 /* NeumorphismTabBarItem.swift */,
+				B3F145C3607255ECA663441E934ED930 /* NeumorphismTabView.swift */,
+				43E8E5CD1CD692FD94D2D01AFEB1659F /* NeumorphismTextField.swift */,
+				DD6F98437D4A1391E88A7FAAC321C04C /* NeumorphismTextView.swift */,
+				5893AE9E2E82216F1D72EBD8F443EF95 /* NeumorphismType.swift */,
+				0257D4FDEB9CB56848E6A82E7E785F72 /* UIColor+.swift */,
+				90643B9C03E7663B9A9A0C4E20CCBC78 /* UIView+.swift */,
+				97626987A631FFDE167B07AF61E6D7E5 /* Support Files */,
+			);
+			name = NeumorphismKit;
+			path = NeumorphismKit;
+			sourceTree = "<group>";
+		};
+		99BF38D90B842BD99C3D6931FE9E5993 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97F68E51B25E336A0D99CC53670D23C8 /* NeumorphismKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A218535DC5878D10993D690E1CA82682 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C312976057D5E9D02F0C9B5949868937 /* NeumorphismKit.framework */,
+				FBDBEC57C185647F0A19A46D2DA1B941 /* Pods_Exchange_Price.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				99BF38D90B842BD99C3D6931FE9E5993 /* Pods */,
+				A218535DC5878D10993D690E1CA82682 /* Products */,
+				3051BB204DF6AD8858BCEF5F586377F9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8012588A1A1C4221BA0233B74B345B28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC330E192FF5835A2CDEE1142D96B785 /* NeumorphismKit-umbrella.h in Headers */,
+				A2DD1FAA7BB14AE27B554ED08E97FBD8 /* NeumorphismKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7AA38DA26C69AE50433F62F309C4085 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B2DD3AD64D47F9154179717272420DB /* Pods-Exchange_Price-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		98DD02ACD397D5DB51CC46FD3EE7DDEB /* Pods-Exchange_Price */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4A996D51F908F74420326C022DEF857 /* Build configuration list for PBXNativeTarget "Pods-Exchange_Price" */;
+			buildPhases = (
+				D7AA38DA26C69AE50433F62F309C4085 /* Headers */,
+				5F402F05424C17578249800F35252AF6 /* Sources */,
+				2A6299B2869819DF18333625F3EE82CC /* Frameworks */,
+				B12E3F54A1C9B19DB3F7146E6F77EFDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138362961201B999568748C8A6B03970 /* PBXTargetDependency */,
+			);
+			name = "Pods-Exchange_Price";
+			productName = "Pods-Exchange_Price";
+			productReference = FBDBEC57C185647F0A19A46D2DA1B941 /* Pods_Exchange_Price.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB9D50BC3A9E12777AC29651A20111CD /* NeumorphismKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F629EBD55907D4C9A0DD1A345DB79C9E /* Build configuration list for PBXNativeTarget "NeumorphismKit" */;
+			buildPhases = (
+				8012588A1A1C4221BA0233B74B345B28 /* Headers */,
+				7472FCBF60A3C714192BA81588113216 /* Sources */,
+				FBE4E430DF416ADF987931B7E29E18A5 /* Frameworks */,
+				914C7182EA64827ADB665C4B3421485F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeumorphismKit;
+			productName = NeumorphismKit;
+			productReference = C312976057D5E9D02F0C9B5949868937 /* NeumorphismKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A218535DC5878D10993D690E1CA82682 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9D50BC3A9E12777AC29651A20111CD /* NeumorphismKit */,
+				98DD02ACD397D5DB51CC46FD3EE7DDEB /* Pods-Exchange_Price */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		914C7182EA64827ADB665C4B3421485F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B12E3F54A1C9B19DB3F7146E6F77EFDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F402F05424C17578249800F35252AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1F80307B8CEBCC4F078371CE84B9622 /* Pods-Exchange_Price-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7472FCBF60A3C714192BA81588113216 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F405FB3B2299EEB647401460095E34E8 /* Array+.swift in Sources */,
+				1D9E463C22267F1AB80151891ED2A58A /* NeumorphismAppearance.swift in Sources */,
+				FFBABA6142DA9AA3A31842DB368F6D47 /* NeumorphismButton.swift in Sources */,
+				96E4B0BCBA0436E3EE1A56B23F0698CB /* NeumorphismCompatible.swift in Sources */,
+				A34A1976049CC50DAFC92DDBCC0CC40D /* NeumorphismExtension.swift in Sources */,
+				E56715509929313C42EFBCFD1717F70A /* NeumorphismKit-dummy.m in Sources */,
+				260224045BA61CE1FF2DC394E8965D3F /* NeumorphismLabel.swift in Sources */,
+				8D24ADBB82DD49328ED35D57AE243FBC /* NeumorphismProgressView.swift in Sources */,
+				5524976DE8088139E319C37747540E62 /* NeumorphismShadowType.swift in Sources */,
+				1428B3D968AB9488076F392173872BA1 /* NeumorphismTabBar.swift in Sources */,
+				FB0926EB24F7D383D25338210F0676C5 /* NeumorphismTabBarController.swift in Sources */,
+				695F7E93D31CE3B7B986CA7EC3167EB2 /* NeumorphismTabBarItem.swift in Sources */,
+				852C58D844EC8EF6BED18CA4E440910A /* NeumorphismTabView.swift in Sources */,
+				EE45393F4E02D0BADC98E67CC8C75829 /* NeumorphismTextField.swift in Sources */,
+				91E6FCD1E53AD57F8E97D59B4F4921A3 /* NeumorphismTextView.swift in Sources */,
+				8859A0F50ADF9F02698C25FA9F0F5809 /* NeumorphismType.swift in Sources */,
+				A2C20F0152D3C23D856AF283AD6B4E42 /* UIColor+.swift in Sources */,
+				036B99C14B0EC04BF4263087F9BE93BA /* UIView+.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		138362961201B999568748C8A6B03970 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NeumorphismKit;
+			target = EB9D50BC3A9E12777AC29651A20111CD /* NeumorphismKit */;
+			targetProxy = 4FCE3E9FB1A99B1C6865BE6791C2D9CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1407B6046066152E753F83FD85D07011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD2B9AE8288C4FA1B739AEB85901B84 /* NeumorphismKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NeumorphismKit/NeumorphismKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NeumorphismKit/NeumorphismKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NeumorphismKit/NeumorphismKit.modulemap";
+				PRODUCT_MODULE_NAME = NeumorphismKit;
+				PRODUCT_NAME = NeumorphismKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5685741A0BB170094C961171803327D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 909EE0D28478E15947615A2D00112F6B /* NeumorphismKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NeumorphismKit/NeumorphismKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NeumorphismKit/NeumorphismKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NeumorphismKit/NeumorphismKit.modulemap";
+				PRODUCT_MODULE_NAME = NeumorphismKit;
+				PRODUCT_NAME = NeumorphismKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		97BCF244071D08483037831FAB452FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0762FB02BA14AC301410566F21399A4A /* Pods-Exchange_Price.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FFA24B7058E23FF359C16E2A338A915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBBB6746DBE15F93ADB87EFDD39ECC1 /* Pods-Exchange_Price.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0374B8CF9A7D6A45F6D116D698D1C19 /* Debug */,
+				593F10BFFA94DAC7D6E17FB8A7F32D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4A996D51F908F74420326C022DEF857 /* Build configuration list for PBXNativeTarget "Pods-Exchange_Price" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97BCF244071D08483037831FAB452FC9 /* Debug */,
+				9FFA24B7058E23FF359C16E2A338A915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F629EBD55907D4C9A0DD1A345DB79C9E /* Build configuration list for PBXNativeTarget "NeumorphismKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1407B6046066152E753F83FD85D07011 /* Debug */,
+				5685741A0BB170094C961171803327D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

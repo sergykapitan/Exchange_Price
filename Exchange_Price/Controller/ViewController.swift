@@ -25,7 +25,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         title = "Price"
         shareView.pickerView.dataSource = self
         shareView.pickerView.delegate = self
@@ -33,7 +33,7 @@ class ViewController: UIViewController{
         
         
         delegate = networkServise
-        delegate?.request(for: symbol!, complation: { (modelEcxchange) in
+        delegate?.request(for: symbol!, complation: {[ weak self ] (modelEcxchange) in
             DispatchQueue.main.async { [ weak self ] in
                 self?.displayStockInfo(model: modelEcxchange)
             }
@@ -43,7 +43,7 @@ class ViewController: UIViewController{
     
     private func requestQute(for str: String) {
         symbol = str
-        delegate?.request(for: symbol!, complation: { (modelEcxchange) in
+        delegate?.request(for: symbol!, complation: { [weak self](modelEcxchange) in
             DispatchQueue.main.async { [ weak self ] in
                 self?.displayStockInfo(model: modelEcxchange)
             }
@@ -84,7 +84,7 @@ extension ViewController: UIPickerViewDelegate {
     
     private func requestQuoteUpdete(){
         
-        shareView.activityIndicator.startAnimating()
+               shareView.activityIndicator.startAnimating()
                shareView.set(companyNameSet: "",
                              symbolSet: "",
                              priceNameSet: 0,
@@ -96,7 +96,7 @@ extension ViewController: UIPickerViewDelegate {
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-        requestQuoteUpdete()
+                requestQuoteUpdete()
         
     }
 }

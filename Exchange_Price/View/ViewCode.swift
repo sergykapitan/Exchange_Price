@@ -7,28 +7,39 @@
 
 import Foundation
 import UIKit
+import NeumorphismKit
 
 final class ViewCode: UIView {
     
     //MARK: - First layer in TopView
     
     let cardView: UIView = {
-               let view = UIView()
-               view.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
-               view.translatesAutoresizingMaskIntoConstraints = false
-              // view.autoresizingMask = [.flexibleHeight,.flexibleWidth]
+        let view = UIView()
+      //  let view = NeumorphismProgressView()
+        
+        view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        view.translatesAutoresizingMaskIntoConstraints = false
                return view
            }()
-    
+    //MARK: - NeumorphismView
+
     //MARK: - Second layer in TopView
     
     let companyName: UILabel = {
-                let label = UILabel()
+               // let label = UILabel()
+                let label = NeumorphismLabel()
+                label.baseColor = .white
+                label.cornerRadius = 3
+                label.isConvex = true
+      //  label.layer.borderWidth = 1
+      //  label.shadowOffset = CGSize(width: 0, height: -1)
+        
                 label.numberOfLines = 0
                 label.font = Constants.postLabelFont
                 label.translatesAutoresizingMaskIntoConstraints = false
                 label.textColor =  #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-                label.backgroundColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+               // label.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+      //  label.te
                 return label
             }()
     let companyNameLabel: UILabel = {
@@ -125,6 +136,7 @@ final class ViewCode: UIView {
             addSubview(cardView)
             cardView.layer.cornerRadius = 10
             cardView.fillSuperview(padding: Constants.cardInsets)
+
         }
     
     func createLabelLayer() {
@@ -136,7 +148,11 @@ final class ViewCode: UIView {
         cardView.addSubview(priceNameLabel)
         cardView.addSubview(priceChangeName)
         cardView.addSubview(priceChangeNameLabel)
+
+       
         
+
+       
         companyName.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 40).isActive = true
         companyName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
         
@@ -189,6 +205,7 @@ final class ViewCode: UIView {
         priceChangeName.text = "PriceChange"
         priceChangeNameLabel.text = "\(priceChangeNameSet)"
     }
+ 
     
     required init?(coder aDecoder: NSCoder) {
               super.init(coder: aDecoder)
