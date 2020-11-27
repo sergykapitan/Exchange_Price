@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/master.swiftdeps"
+  },
+  "/Users/sergey_app/Developer/Exchange_Price/Sources/Exchange_Price/Exchange_Price.swift": {
+    "dependencies": "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/Exchange_Price.d",
+    "object": "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/Exchange_Price.swift.o",
+    "swiftmodule": "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/Exchange_Price~partial.swiftmodule",
+    "swift-dependencies": "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/Exchange_Price.swiftdeps"
+  }
+}

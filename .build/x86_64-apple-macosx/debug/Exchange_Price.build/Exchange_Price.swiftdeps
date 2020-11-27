@@ -1,0 +1,23 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Exchange_Price"
+provides-nominal:
+- "14Exchange_PriceAAV"
+provides-member:
+- ["14Exchange_PriceAAV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Exchange_Price"
+- "StringLiteralType"
+depends-member:
+- ["14Exchange_PriceAAV", "init"]
+- ["14Exchange_PriceAAV", "text"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "14Exchange_PriceAAV"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Exchange_Price.build/module.modulemap"
+- "/Users/sergey_app/Developer/Exchange_Price/.build/x86_64-apple-macosx/debug/Logging.build/module.modulemap"
+interface-hash: "94a4c45ca9e294aa93b2dd13a19f5823"

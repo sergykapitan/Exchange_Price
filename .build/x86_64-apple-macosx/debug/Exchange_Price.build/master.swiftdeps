@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
+options: "01ad543d77f03164a19f41a941354bb2"
+build_time: [1606464205, 68865000]
+inputs:
+  "/Users/sergey_app/Developer/Exchange_Price/Sources/Exchange_Price/Exchange_Price.swift": [1606463709, 937882565]

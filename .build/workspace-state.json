@@ -1,0 +1,1 @@
+{"object": {"artifacts": [], "dependencies": [{"basedOn": null, "packageRef": {"identity": "swift-log", "kind": "remote", "name": "swift-log", "path": "https://github.com/apple/swift-log.git"}, "state": {"checkoutState": {"branch": null, "revision": "173f567a2dfec11d74588eea82cecea555bdc0bc", "version": "1.4.0"}, "name": "checkout"}, "subpath": "swift-log"}]}, "version": 4}

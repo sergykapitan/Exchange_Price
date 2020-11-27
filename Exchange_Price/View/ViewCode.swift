@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import NeumorphismKit
 
 final class ViewCode: UIView {
     
@@ -26,11 +25,8 @@ final class ViewCode: UIView {
     //MARK: - Second layer in TopView
     
     let companyName: UILabel = {
-               // let label = UILabel()
-                let label = NeumorphismLabel()
-                label.baseColor = .white
-                label.cornerRadius = 3
-                label.isConvex = true
+                let label = UILabel()
+              
       //  label.layer.borderWidth = 1
       //  label.shadowOffset = CGSize(width: 0, height: -1)
         
