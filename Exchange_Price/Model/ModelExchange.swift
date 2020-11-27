@@ -14,5 +14,9 @@ struct ModelExchange: Codable {
     let symbol: String
     let latestPrice: Double
     let change: Double
+}
+struct ModelLogo: Codable {
     
+    let url: String
+
 }

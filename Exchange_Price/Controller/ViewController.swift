@@ -4,20 +4,31 @@
 //
 //  Created by Sergey on 06.11.2020.
 //
-
 import UIKit
 
 class ViewController: UIViewController{
 
     
-    var delegate: Networking?
+    var delegateNetworkServise: Networking?
     var symbol: String? = "AAPL"
 
     let networkServise = NetworkServise()
     let model = ModelPrice()
     var shareView = ViewCode()
+    var defoltImage = UIImage(named:"apple.png")
 
     
+//    private var image: UIImage? {
+//        didSet {
+//            displayImage(image: image!)
+//         //   shareView.setImage(image: (image ?? defoltImage)!)
+//        }
+//    }
+//    private var url: URL? {
+//        didSet {
+//            shareView.setImage(url: url)
+//        }
+//    }
     override func loadView() {
            view = shareView
        }
@@ -25,42 +36,62 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        view.backgroundColor = .offWhite
         title = "Price"
+        
         shareView.pickerView.dataSource = self
         shareView.pickerView.delegate = self
+        navigationController?.navigationBar.barTintColor = .offWhite
         
         
-        
-        delegate = networkServise
-        delegate?.request(for: symbol!, complation: {[ weak self ] (modelEcxchange) in
-            DispatchQueue.main.async { [ weak self ] in
-                self?.displayStockInfo(model: modelEcxchange)
-            }
-        })
-       
+        delegateNetworkServise = networkServise
     }
     
-    private func requestQute(for str: String) {
-        symbol = str
-        delegate?.request(for: symbol!, complation: { [weak self](modelEcxchange) in
+    private func requestQute(for selectedSymbol: String) {
+        symbol = selectedSymbol
+        
+        delegateNetworkServise?.request(for: symbol!,for: API.request ,complation: { [weak self](data) in
             DispatchQueue.main.async { [ weak self ] in
-                self?.displayStockInfo(model: modelEcxchange)
+                let modelParse =  self?.parseQuote(from: data)
+                self?.displayStockInfo(model: modelParse!)
             }
         })
         
+       delegateNetworkServise?.request(for: symbol!, for: API.requestLogo, complation: {[weak self] (data) in
+            DispatchQueue.main.async { [ weak self ] in
+                let modelLogo = self?.parseLogo(from: data)
+                let urlLogo = modelLogo?.url
+                self?.shareView.activityImageIndicator.stopAnimating()
+                self!.shareView.setImage(url: urlLogo)
+                }
+        })
+    }
+    private func parseQuote(from data: Data) -> ModelExchange {
+        
+        let product: ModelExchange = try! JSONDecoder().decode(ModelExchange.self, from: data)
+                return product
+    }
+    private func parseLogo(from data: Data) -> ModelLogo{
+        
+        let product: ModelLogo = try! JSONDecoder().decode(ModelLogo.self, from: data)
+                return product
     }
     
 
     func displayStockInfo(model: ModelExchange) {
         shareView.activityIndicator.stopAnimating()
         shareView.set(
-                      companyNameSet: model.companyName,
-                      symbolSet: model.symbol,
-                      priceNameSet: model.latestPrice,
-                      priceChangeNameSet: model.change)
+            companyNameSet: model.companyName,
+            symbolSet: model.symbol,
+            priceNameSet: model.latestPrice,
+            priceChangeNameSet: model.change)
  
     }
+    func displayImage(image: UIImage) {
+       // shareView.setImage
+    }
+    
+    
 }
 
 
@@ -82,21 +113,25 @@ extension ViewController: UIPickerViewDelegate {
         return Array(model.companies.keys)[row]
     }
     
-    private func requestQuoteUpdete(){
+    private func requestQuoteUpdate(){
         
                shareView.activityIndicator.startAnimating()
-               shareView.set(companyNameSet: "",
-                             symbolSet: "",
+               shareView.activityImageIndicator.startAnimating()
+               shareView.viewLogoCompany.image = .none
+               shareView.set(companyNameSet: "-",
+                             symbolSet: "-",
                              priceNameSet: 0,
                              priceChangeNameSet: 0)
                        
                 let selectedRow = shareView.pickerView.selectedRow(inComponent: 0)
                 let selectedSymbol = Array(model.companies.values)[selectedRow]
                 requestQute(for: selectedSymbol)
+                    
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-                requestQuoteUpdete()
-        
+                requestQuoteUpdate()
+               
     }
 }
+

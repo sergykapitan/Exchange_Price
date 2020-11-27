@@ -8,22 +8,21 @@
 import Foundation
 
 protocol Networking {
-    func request(for symbol: String, complation:  @escaping (ModelExchange) -> ())
+    func request(for symbol: String,for request: String, complation:  @escaping (Data) -> ())
 }
 
 
 class NetworkServise: Networking {
+
     
-    func request(for symbol: String, complation: @escaping(ModelExchange)->()) {
+    func request(for symbol: String,for request: String, complation: @escaping(Data)->()) {
         
         let session = URLSession.shared
-        let url = URL(string: "https://cloud.iexapis.com/stable/stock/\(symbol)/quote?token=\(API.token)")!
-
+        let url = self.url(from: symbol, params: request)
         let task = session.dataTask(with: url) { data, response, error in
             if let data = data,error == nil {
-              let requestData =  self.parseQuote(from: data)
-                DispatchQueue.main.async {
-                     complation(requestData)
+                    DispatchQueue.main.async {
+                        complation(data)
                 }
             }
 
@@ -37,19 +36,24 @@ class NetworkServise: Networking {
                 return
             }
 
-//            guard let mime = response.mimeType, mime == "application/json" else {
-//                print("Wrong MIME type!")
-//                return
-//            }
         }
 
         task.resume()
         
     }
+
     
-        private func parseQuote(from data: Data) -> ModelExchange {
-                let product: ModelExchange = try!JSONDecoder().decode(ModelExchange.self, from: data)
-                return product
-        }
+    private func url(from symbol: String,params: String) -> URL {
+        
+        var components = URLComponents()
+
+        components.scheme = API.scheme
+        components.host = API.host
+        components.path = API.path + symbol + params
+        components.queryItems = [
+            URLQueryItem(name: "token", value: API.token),
+        ]
+        return components.url!
+    }
      
 }
