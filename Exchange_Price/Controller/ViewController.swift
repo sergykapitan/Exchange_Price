@@ -13,22 +13,10 @@ class ViewController: UIViewController{
     var symbol: String? = "AAPL"
 
     let networkServise = NetworkServise()
-    let model = ModelPrice()
+    let model = ModelCompany()
     var shareView = ViewCode()
     var defoltImage = UIImage(named:"apple.png")
 
-    
-//    private var image: UIImage? {
-//        didSet {
-//            displayImage(image: image!)
-//         //   shareView.setImage(image: (image ?? defoltImage)!)
-//        }
-//    }
-//    private var url: URL? {
-//        didSet {
-//            shareView.setImage(url: url)
-//        }
-//    }
     override func loadView() {
            view = shareView
        }
@@ -65,6 +53,20 @@ class ViewController: UIViewController{
                 self!.shareView.setImage(url: urlLogo)
                 }
         })
+        
+        delegateNetworkServise?.request(for: symbol!,for: API.requestPrice ,complation: { [weak self](data) in
+            DispatchQueue.main.async { [ weak self ] in
+                let modelParse =  self?.parsePrice(from: data)
+                print(modelParse)
+              //  self?.displayStockInfo(model: modelParse!)
+            }
+        })
+        
+        
+        
+        
+        
+        
     }
     private func parseQuote(from data: Data) -> ModelExchange {
         
@@ -75,6 +77,12 @@ class ViewController: UIViewController{
         
         let product: ModelLogo = try! JSONDecoder().decode(ModelLogo.self, from: data)
                 return product
+    }
+    private func parsePrice(from data: Data) -> [ModelPrice] {
+        
+        let product = try! JSONDecoder().decode([ModelPrice].self, from: data)
+        print(product.count)
+        return product
     }
     
 
@@ -87,10 +95,6 @@ class ViewController: UIViewController{
             priceChangeNameSet: model.change)
  
     }
-    func displayImage(image: UIImage) {
-       // shareView.setImage
-    }
-    
     
 }
 

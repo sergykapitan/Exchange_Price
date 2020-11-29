@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C0AAE2A2559C9590060F361 /* ModelPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AAE292559C9590060F361 /* ModelPrice.swift */; };
+		8C0AAE2A2559C9590060F361 /* ModelCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C0AAE292559C9590060F361 /* ModelCompany.swift */; };
 		8C4643242555ADA0004AD033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4643232555ADA0004AD033 /* AppDelegate.swift */; };
 		8C4643262555ADA0004AD033 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4643252555ADA0004AD033 /* SceneDelegate.swift */; };
 		8C4643282555ADA0004AD033 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4643272555ADA0004AD033 /* ViewController.swift */; };
@@ -17,6 +17,7 @@
 		8C46433F2555BD5C004AD033 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C46433E2555BD5C004AD033 /* Constraints.swift */; };
 		8C4B026E25716D5300B97046 /* Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B026D25716D5300B97046 /* Extention.swift */; };
 		8C4B027125716D8500B97046 /* MoaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B027025716D8500B97046 /* MoaImage.swift */; };
+		8C4B029E2574144500B97046 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4B029D2574144500B97046 /* ChartsView.swift */; };
 		8C4EECB22559A5B500B1BF33 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EECB12559A5B500B1BF33 /* ViewCode.swift */; };
 		8C6588DD2561C07700CC6A91 /* ModelExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6588DC2561C07700CC6A91 /* ModelExchange.swift */; };
 		8C90CB1F255AFA5B0045281B /* NetworkServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C90CB1E255AFA5B0045281B /* NetworkServise.swift */; };
@@ -28,7 +29,7 @@
 		210BDA1AA3DB6ED0AFF50802 /* Pods-Exchange_Price.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange_Price.release.xcconfig"; path = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price.release.xcconfig"; sourceTree = "<group>"; };
 		80A3F8850905B11616EE36EA /* Pods-Exchange_Price.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exchange_Price.debug.xcconfig"; path = "Target Support Files/Pods-Exchange_Price/Pods-Exchange_Price.debug.xcconfig"; sourceTree = "<group>"; };
 		84A06939C811A9777F42B3DE /* Pods_Exchange_Price.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exchange_Price.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C0AAE292559C9590060F361 /* ModelPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPrice.swift; sourceTree = "<group>"; };
+		8C0AAE292559C9590060F361 /* ModelCompany.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCompany.swift; sourceTree = "<group>"; };
 		8C4643202555ADA0004AD033 /* Exchange_Price.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchange_Price.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4643232555ADA0004AD033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4643252555ADA0004AD033 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		8C46433E2555BD5C004AD033 /* Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		8C4B026D25716D5300B97046 /* Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extention.swift; sourceTree = "<group>"; };
 		8C4B027025716D8500B97046 /* MoaImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoaImage.swift; sourceTree = "<group>"; };
+		8C4B029D2574144500B97046 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
 		8C4EECB12559A5B500B1BF33 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 		8C6588DC2561C07700CC6A91 /* ModelExchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExchange.swift; sourceTree = "<group>"; };
 		8C90CB1E255AFA5B0045281B /* NetworkServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServise.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				8C4EECB12559A5B500B1BF33 /* ViewCode.swift */,
+				8C4B029D2574144500B97046 /* ChartsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +91,7 @@
 				8C46433B2555BCB4004AD033 /* Constants.swift */,
 				8C46433E2555BD5C004AD033 /* Constraints.swift */,
 				8C4B026D25716D5300B97046 /* Extention.swift */,
+				8C90CB21255AFAE00045281B /* API.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -114,20 +118,10 @@
 		8C0AAE282559C92B0060F361 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8C0AAE292559C9590060F361 /* ModelPrice.swift */,
+				8C0AAE292559C9590060F361 /* ModelCompany.swift */,
 				8C6588DC2561C07700CC6A91 /* ModelExchange.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		8C16AE432565722600D2ACC5 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				8C4B027025716D8500B97046 /* MoaImage.swift */,
-				8C90CB1E255AFA5B0045281B /* NetworkServise.swift */,
-				8C90CB21255AFAE00045281B /* API.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8C4643172555ADA0004AD033 = {
@@ -152,14 +146,23 @@
 			isa = PBXGroup;
 			children = (
 				8C0AAE272559C9190060F361 /* App */,
-				8C0AAE262559C90B0060F361 /* Assets */,
 				8C0AAE242559C8EC0060F361 /* Controller */,
 				8C0AAE232559C8E20060F361 /* View */,
 				8C0AAE282559C92B0060F361 /* Model */,
+				8C4B027325719F7F00B97046 /* Servise */,
 				8C0AAE252559C8FC0060F361 /* Helper */,
-				8C16AE432565722600D2ACC5 /* Helpers */,
+				8C0AAE262559C90B0060F361 /* Assets */,
 			);
 			path = Exchange_Price;
+			sourceTree = "<group>";
+		};
+		8C4B027325719F7F00B97046 /* Servise */ = {
+			isa = PBXGroup;
+			children = (
+				8C4B027025716D8500B97046 /* MoaImage.swift */,
+				8C90CB1E255AFA5B0045281B /* NetworkServise.swift */,
+			);
+			path = Servise;
 			sourceTree = "<group>";
 		};
 		9A9F5A5000CFA6753943BE5F /* Pods */ = {
@@ -288,9 +291,10 @@
 				8C4B027125716D8500B97046 /* MoaImage.swift in Sources */,
 				8C4643242555ADA0004AD033 /* AppDelegate.swift in Sources */,
 				8C90CB1F255AFA5B0045281B /* NetworkServise.swift in Sources */,
-				8C0AAE2A2559C9590060F361 /* ModelPrice.swift in Sources */,
+				8C0AAE2A2559C9590060F361 /* ModelCompany.swift in Sources */,
 				8C46433F2555BD5C004AD033 /* Constraints.swift in Sources */,
 				8C4643262555ADA0004AD033 /* SceneDelegate.swift in Sources */,
+				8C4B029E2574144500B97046 /* ChartsView.swift in Sources */,
 				8C6588DD2561C07700CC6A91 /* ModelExchange.swift in Sources */,
 				8C46433C2555BCB4004AD033 /* Constants.swift in Sources */,
 				8C90CB22255AFAE00045281B /* API.swift in Sources */,

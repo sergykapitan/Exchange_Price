@@ -10,20 +10,29 @@ import UIKit
 
 final class ViewCode: UIView {
     
+    let barChart: ChartsView = {
+        let chart = ChartsView()
+        chart.layer.cornerRadius = 6
+        chart.layer.borderWidth = 1
+        chart.layer.borderColor = Constants.fillColor.cgColor
+        chart.backgroundColor = .offWhite
+        chart.translatesAutoresizingMaskIntoConstraints = false
+        chart.clipsToBounds = true
+        return chart
+    }()
+    
     //MARK: - First layer in TopView
     
     let cardView: UIView = {
         let view = UIView()
         view.layer.cornerRadius = 8
-        view.layer.borderWidth = 1
+        view.layer.borderWidth = 0.8
         view.layer.borderColor = Constants.fillColor.cgColor
         view.layer.shadowOpacity = 0.5
         view.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         view.layer.shadowRadius = 2.0
-       // view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowColor = UIColor.black.withAlphaComponent(20).cgColor
         view.translatesAutoresizingMaskIntoConstraints = false
-    //    view.layer.masksToBounds = false
         view.clipsToBounds = true
             return view
         }()
@@ -199,7 +208,6 @@ final class ViewCode: UIView {
         createPickerViewLayer()
         createActivityIndicator()        
         set(companyNameSet: " ??? ",symbolSet: " ??? ",priceNameSet: 0,priceChangeNameSet: 0)
-       // setImage(url: "https://storage.googleapis.com/iexcloud-hl37opg/api/logos/FB.png")
         setImage(url: "")
         }
     
@@ -218,6 +226,8 @@ final class ViewCode: UIView {
         cardView.addSubview(priceNameLabel)
         cardView.addSubview(priceChangeName)
         cardView.addSubview(priceChangeNameLabel)
+        cardView.addSubview(barChart)
+       // chartView.addSubview(barChart)
       
         viewLogoCompany.centerXAnchor.constraint(equalTo: cardView.centerXAnchor, constant: 0).isActive = true
         viewLogoCompany.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 20).isActive = true
@@ -264,14 +274,20 @@ final class ViewCode: UIView {
         priceChangeNameLabel.topAnchor.constraint(equalTo: priceNameLabel.bottomAnchor, constant: 30).isActive = true
         priceChangeNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
         priceChangeNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
-
+        
+        barChart.topAnchor.constraint(equalTo: priceChangeName.bottomAnchor, constant: 20).isActive = true
+        barChart.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+        barChart.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+       // barChart.bottomAnchor.constraint(equalTo: pickerView.topAnchor,constant: 5).isActive = true
+        barChart.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.3,constant: 0).isActive = true
+  
     }
     func createPickerViewLayer() {
         cardView.addSubview(pickerView)
         pickerView.bottomAnchor.constraint(equalTo: cardView.bottomAnchor, constant: -20).isActive = true
         pickerView.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 20).isActive = true
         pickerView.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -20).isActive = true
-        pickerView.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.3, constant: 0).isActive = true
+        pickerView.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.2, constant: 0).isActive = true
     }
     func createActivityIndicator() {
         cardView.addSubview(activityIndicator)
@@ -300,14 +316,17 @@ final class ViewCode: UIView {
     func setImage(url: String?) {
         viewLogoCompany.moa.url = url
     }
+    func setChats () {
+       
+        
+    }
   
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         createCardLayer()
         createLabelLayer()
         createPickerViewLayer()
-        createActivityIndicator()
-       
+        createActivityIndicator()       
         set(companyNameSet: "???",symbolSet: "???",priceNameSet: 1,priceChangeNameSet: 1)
     }
 }

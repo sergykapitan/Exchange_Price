@@ -16,6 +16,7 @@ struct API {
     static let path = "/stable/stock/"
     static let request = "/quote"
     static let requestLogo = "/logo"
+    static let requestPrice = "/chart/5d"
     
     
     static let token = "pk_48df081355d64e2b8973505cb98d3d3d"

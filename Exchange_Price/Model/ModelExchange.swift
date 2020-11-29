@@ -18,5 +18,23 @@ struct ModelExchange: Codable {
 struct ModelLogo: Codable {
     
     let url: String
-
+}
+struct ModelPrice: Codable {
+    
+    let date : String?
+    let open : Double?
+    let close : Double?
+    let high : Double?
+    let low : Double?
+    let volume : Int?
+    let uOpen : Double?
+    let uClose : Double?
+    let uHigh : Double?
+    let uLow : Double?
+    let uVolume : Int?
+    let change : Int?
+    let changePercent : Int?
+    let label : String?
+    let changeOverTime : Int?
+   
 }

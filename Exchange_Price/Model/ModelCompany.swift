@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ModelPrice {
+struct ModelCompany {
 
   var companies = ["Apple":"AAPL",
                    "Microsoft":"MSFT",
