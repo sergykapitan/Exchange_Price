@@ -32,9 +32,9 @@ struct ModelPrice: Codable {
     let uHigh : Double?
     let uLow : Double?
     let uVolume : Int?
-    let change : Int?
-    let changePercent : Int?
+   // let change : Int?
+   // let changePercent : Int?
     let label : String?
-    let changeOverTime : Int?
+   // let changeOverTime : Int?
    
 }

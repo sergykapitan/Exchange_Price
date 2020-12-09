@@ -278,7 +278,6 @@ final class ViewCode: UIView {
         barChart.topAnchor.constraint(equalTo: priceChangeName.bottomAnchor, constant: 20).isActive = true
         barChart.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
         barChart.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-       // barChart.bottomAnchor.constraint(equalTo: pickerView.topAnchor,constant: 5).isActive = true
         barChart.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.3,constant: 0).isActive = true
   
     }
@@ -298,8 +297,8 @@ final class ViewCode: UIView {
         
         
         
-        activityIndicator.centerYAnchor.constraint(equalTo: cardView.centerYAnchor, constant: 0).isActive = true
-        activityIndicator.centerXAnchor.constraint(equalTo: cardView.centerXAnchor, constant: 0).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: barChart.centerYAnchor, constant: 0).isActive = true
+        activityIndicator.centerXAnchor.constraint(equalTo: barChart.centerXAnchor, constant: 0).isActive = true
         
     }
     

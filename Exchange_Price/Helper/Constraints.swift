@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 
-
+//superview?.topAnchor
 
 extension UIView {
     
     func fillSuperview(padding: UIEdgeInsets) {
-        anchor(top: superview?.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor, padding: padding)
+        anchor(top: superview?.safeAreaLayoutGuide.topAnchor, leading: superview?.leadingAnchor, bottom: superview?.bottomAnchor, trailing: superview?.trailingAnchor, padding: padding)
     }
     
     func fillSuperview() {

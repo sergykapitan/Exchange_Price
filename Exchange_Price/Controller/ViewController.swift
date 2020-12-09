@@ -56,8 +56,8 @@ class ViewController: UIViewController{
         
         delegateNetworkServise?.request(for: symbol!,for: API.requestPrice ,complation: { [weak self](data) in
             DispatchQueue.main.async { [ weak self ] in
-                let modelParse =  self?.parsePrice(from: data)
-                print(modelParse)
+                let modelPrise =  self?.parsePrice(from: data)
+           //     print(modelPrise)
               //  self?.displayStockInfo(model: modelParse!)
             }
         })
@@ -81,7 +81,7 @@ class ViewController: UIViewController{
     private func parsePrice(from data: Data) -> [ModelPrice] {
         
         let product = try! JSONDecoder().decode([ModelPrice].self, from: data)
-        print(product.count)
+      //  print(product.count)
         return product
     }
     
