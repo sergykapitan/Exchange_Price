@@ -227,58 +227,71 @@ final class ViewCode: UIView {
         cardView.addSubview(priceChangeName)
         cardView.addSubview(priceChangeNameLabel)
         cardView.addSubview(barChart)
-       // chartView.addSubview(barChart)
       
-        viewLogoCompany.centerXAnchor.constraint(equalTo: cardView.centerXAnchor, constant: 0).isActive = true
-        viewLogoCompany.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 20).isActive = true
-        viewLogoCompany.widthAnchor.constraint(equalToConstant: 40).isActive = true
-        viewLogoCompany.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         
-        
-        companyName.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 80).isActive = true
-        companyName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
-        companyName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        viewLogoCompany.centerX(inView: cardView)
+        viewLogoCompany.anchor(top: cardView.topAnchor,paddingTop: 20, width: 40, height: 40)
         
         
-        companyNameLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 80).isActive = true
-        companyNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-        companyNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        viewLogoCompany.centerXAnchor.constraint(equalTo: cardView.centerXAnchor, constant: 0).isActive = true
+//        viewLogoCompany.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 20).isActive = true
+//        viewLogoCompany.widthAnchor.constraint(equalToConstant: 40).isActive = true
+//        viewLogoCompany.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
+        companyName.anchor(top: cardView.topAnchor,left: cardView.leftAnchor ,paddingTop: 80,paddingLeft: 25,height: 30)
         
-        symbolName.topAnchor.constraint(equalTo: companyName.bottomAnchor, constant: 30).isActive = true
-        symbolName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
-        symbolName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        companyName.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 80).isActive = true
+//        companyName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+//        companyName.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        companyNameLabel.anchor(top: cardView.topAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingRight: 25,height: 30)
+//        companyNameLabel.topAnchor.constraint(equalTo: cardView.topAnchor, constant: 80).isActive = true
+//        companyNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+//        companyNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        symbolLabel.topAnchor.constraint(equalTo: companyNameLabel.bottomAnchor, constant: 30).isActive = true
-        symbolLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-        symbolLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        symbolName.anchor(top: companyName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
+//        symbolName.topAnchor.constraint(equalTo: companyName.bottomAnchor, constant: 30).isActive = true
+//        symbolName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+//        symbolName.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        symbolLabel.anchor(top: companyNameLabel.bottomAnchor,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
-        priceName.topAnchor.constraint(equalTo: symbolName.bottomAnchor, constant: 30).isActive = true
-        priceName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
-        priceName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        symbolLabel.topAnchor.constraint(equalTo: companyNameLabel.bottomAnchor, constant: 30).isActive = true
+//        symbolLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+//        symbolLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        priceName.anchor(top:symbolName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
         
-        priceNameLabel.topAnchor.constraint(equalTo: symbolLabel.bottomAnchor, constant: 30).isActive = true
-        priceNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-        priceNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        priceName.topAnchor.constraint(equalTo: symbolName.bottomAnchor, constant: 30).isActive = true
+//        priceName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+//        priceName.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        priceNameLabel.anchor(top:symbolLabel.bottomAnchor ,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
-        priceChangeName.topAnchor.constraint(equalTo: priceName.bottomAnchor, constant: 30).isActive = true
-        priceChangeName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
-        priceChangeName.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        priceNameLabel.topAnchor.constraint(equalTo: symbolLabel.bottomAnchor, constant: 30).isActive = true
+//        priceNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+//        priceNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
+        priceChangeName.anchor(top: priceName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
         
-        priceChangeNameLabel.topAnchor.constraint(equalTo: priceNameLabel.bottomAnchor, constant: 30).isActive = true
-        priceChangeNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-        priceChangeNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        priceChangeName.topAnchor.constraint(equalTo: priceName.bottomAnchor, constant: 30).isActive = true
+//        priceChangeName.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+//        priceChangeName.heightAnchor.constraint(equalToConstant: 30).isActive = true
         
-        barChart.topAnchor.constraint(equalTo: priceChangeName.bottomAnchor, constant: 20).isActive = true
-        barChart.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
-        barChart.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
-        barChart.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.3,constant: 0).isActive = true
+        priceChangeNameLabel.anchor(top: priceNameLabel.bottomAnchor ,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
+        
+//        priceChangeNameLabel.topAnchor.constraint(equalTo: priceNameLabel.bottomAnchor, constant: 30).isActive = true
+//        priceChangeNameLabel.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+//        priceChangeNameLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
+ 
+        barChart.anchor(top: priceChangeName.bottomAnchor, left: cardView.leftAnchor, right: cardView.rightAnchor,paddingTop: 20,paddingLeft: 25,paddingRight: 25)
+        barChart.heightEqualToMultiplier(inView: cardView, multiplier: 0.3)
+        
+//        barChart.topAnchor.constraint(equalTo: priceChangeName.bottomAnchor, constant: 20).isActive = true
+//        barChart.leadingAnchor.constraint(equalTo: cardView.leadingAnchor, constant: 25).isActive = true
+//        barChart.trailingAnchor.constraint(equalTo: cardView.trailingAnchor, constant: -25).isActive = true
+//        barChart.heightAnchor.constraint(equalTo: cardView.heightAnchor, multiplier: 0.3,constant: 0).isActive = true
   
     }
     func createPickerViewLayer() {

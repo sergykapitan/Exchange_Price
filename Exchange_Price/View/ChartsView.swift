@@ -41,7 +41,8 @@ class ChartsView: UIView {
         return path
     }
     
-    func arrayShapLayer(stepLine: Int) ->[CAShapeLayer]{
+    func arrayShapLayer(stepLine: Int) ->[CAShapeLayer] {
+        
         var shapeLayerArray = [CAShapeLayer]()
         let doubleNumers = [Double]().createDoubleArray(n: stepLine)
         let lineX = self.frame.size.width/CGFloat(stepLine)
@@ -71,29 +72,7 @@ class ChartsView: UIView {
         textLayer.contentsScale = UIScreen.main.scale
         self.layer.addSublayer(textLayer)
     }
-    /**
-     
-    Double Array extension.
-    Creates an array of type Double with step 1.0 and count n
-        // iOS
-          let arr = createDoubleArray(n: 10)
-     
-        //  [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0]     
-        - parameter n: n - array count
-    */
-   
-//    func createDoubleArray (n: Int) -> [Double] {
-//        var dArray = [Double]()
-//        var nDouble = Double(n)
-//        while nDouble > 0 {
-//           var arrDouble = 0.0
-//            dArray.append(arrDouble)
-//            nDouble -= 1
-//            arrDouble += 1
-//        }
-//        return dArray
-//    }
-  
+ 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
