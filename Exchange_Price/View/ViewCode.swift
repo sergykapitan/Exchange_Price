@@ -217,44 +217,37 @@ final class ViewCode: UIView {
         }
     
     func createLabelLayer() {
+   
         cardView.addSubview(viewLogoCompany)
-        cardView.addSubview(companyName)
-        cardView.addSubview(companyNameLabel)
-        cardView.addSubview(symbolName)
-        cardView.addSubview(symbolLabel)
-        cardView.addSubview(priceName)
-        cardView.addSubview(priceNameLabel)
-        cardView.addSubview(priceChangeName)
-        cardView.addSubview(priceChangeNameLabel)
-        cardView.addSubview(barChart)
-      
-        
-        
         viewLogoCompany.centerX(inView: cardView)
         viewLogoCompany.anchor(top: cardView.topAnchor,paddingTop: 20, width: 40, height: 40)
         
+        cardView.addSubview(companyName)
         companyName.anchor(top: cardView.topAnchor,left: cardView.leftAnchor ,paddingTop: 80,paddingLeft: 25,height: 30)
-   
+        
+        cardView.addSubview(companyNameLabel)
         companyNameLabel.anchor(top: cardView.topAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingRight: 25,height: 30)
    
+        cardView.addSubview(symbolName)
         symbolName.anchor(top: companyName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
 
+        cardView.addSubview(symbolLabel)
         symbolLabel.anchor(top: companyNameLabel.bottomAnchor,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
-
         
+        cardView.addSubview(priceName)
         priceName.anchor(top:symbolName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
         
-        
+        cardView.addSubview(priceNameLabel)
         priceNameLabel.anchor(top:symbolLabel.bottomAnchor ,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
-        
+        cardView.addSubview(priceChangeName)
         priceChangeName.anchor(top: priceName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
         
-        
+        cardView.addSubview(priceChangeNameLabel)
         priceChangeNameLabel.anchor(top: priceNameLabel.bottomAnchor ,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
- 
+        cardView.addSubview(barChart)
         barChart.anchor(top: priceChangeName.bottomAnchor, left: cardView.leftAnchor, right: cardView.rightAnchor,paddingTop: 20,paddingLeft: 25,paddingRight: 25)
         barChart.heightEqualToMultiplier(inView: cardView, multiplier: 0.3)
         
