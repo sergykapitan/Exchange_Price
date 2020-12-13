@@ -10,17 +10,6 @@ import UIKit
 
 final class ViewCode: UIView {
     
-    let barChart: ChartsView = {
-        let chart = ChartsView()
-        chart.layer.cornerRadius = 6
-        chart.layer.borderWidth = 1
-        chart.layer.borderColor = Constants.fillColor.cgColor
-        chart.backgroundColor = .offWhite
-        chart.translatesAutoresizingMaskIntoConstraints = false
-        chart.clipsToBounds = true
-        return chart
-    }()
-    
     //MARK: - First layer in TopView
     
     let cardView: UIView = {
@@ -51,133 +40,47 @@ final class ViewCode: UIView {
     }()
     
     let companyName: UILabel = {
-        let label = UILabel()
-        label.layer.cornerRadius = 6
-        label.layer.borderWidth = 0.8
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        label.textAlignment = .center
-        label.clipsToBounds = true
-            return label
+            return UILabel().myLabel()
         }()
     
     let companyNameLabel: UILabel = {
-        let label = UILabel()
-        label.layer.cornerRadius = 6
-        label.layer.borderWidth = 1
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.layer.shadowOpacity = 1
-        label.layer.shadowOffset = CGSize(width: -4.0, height: -4.0)
-        label.layer.shadowRadius = 2.0
-        label.backgroundColor = .offWhite
-        label.layer.shadowColor = UIColor.black.cgColor
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        label.textAlignment = .center
-        label.clipsToBounds = true
-            return label
+            return UILabel().myLabel()
         }()
     
     let symbolName: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.layer.shadowOpacity = 1
-        label.layer.shadowRadius = 2.0
-        label.backgroundColor = .offWhite
-        label.layer.shadowColor = UIColor.black.cgColor
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-        label.clipsToBounds = true
-       // label.layer.masksToBounds = false
-            return label
+            return UILabel().myLabel()
         }()
     
     let symbolLabel: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            return label
+            return UILabel().myLabel()
         }()
     
     let priceName: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            return label
+            return UILabel().myLabel()
         }()
     
     let priceNameLabel: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            return label
+            return UILabel().myLabel()
         }()
     
     let priceChangeName: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            return label
+            return UILabel().myLabel()
         }()
     
     let priceChangeNameLabel: UILabel = {
-        let label = UILabel()
-        label.layer.borderWidth = 1
-        label.layer.cornerRadius = 6
-        label.layer.borderColor = Constants.fillColor.cgColor
-        label.backgroundColor = .offWhite
-        label.clipsToBounds = true
-        label.textAlignment = .center
-        label.numberOfLines = 0
-        label.font = Constants.postLabelFont
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor =  #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
-            return label
+            return UILabel().myLabel()
         }()
+    
+    let barChart: ChartsView = {
+           let chart = ChartsView()
+           chart.layer.cornerRadius = 6
+           chart.layer.borderWidth = 1
+           chart.layer.borderColor = Constants.fillColor.cgColor
+           chart.backgroundColor = .offWhite
+           chart.translatesAutoresizingMaskIntoConstraints = false
+           chart.clipsToBounds = true
+           return chart
+       }()
     
     let pickerView: UIPickerView = {
         let picker = UIPickerView()

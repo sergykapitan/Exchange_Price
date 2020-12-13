@@ -56,3 +56,19 @@ extension UIView {
         heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: multiplier).isActive = true
     }
 }
+extension UILabel {
+    func myLabel() -> UILabel {
+        let label = UILabel()
+        label.layer.cornerRadius = 6
+        label.layer.borderWidth = 0.8
+        label.layer.borderColor = Constants.fillColor.cgColor
+        label.backgroundColor = .offWhite
+        label.numberOfLines = 0
+        label.font = Constants.postLabelFont
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = #colorLiteral(red: 0.2549019754, green: 0.2745098174, blue: 0.3019607961, alpha: 1)
+        label.textAlignment = .center
+        label.clipsToBounds = true
+            return label
+    }
+}
