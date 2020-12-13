@@ -72,13 +72,13 @@ final class ViewCode: UIView {
         }()
     
     let barChart: ChartsView = {
-           let chart = ChartsView()
-           chart.layer.cornerRadius = 6
-           chart.layer.borderWidth = 1
-           chart.layer.borderColor = Constants.fillColor.cgColor
-           chart.backgroundColor = .offWhite
-           chart.translatesAutoresizingMaskIntoConstraints = false
-           chart.clipsToBounds = true
+        let chart = ChartsView()
+        chart.layer.cornerRadius = 6
+        chart.layer.borderWidth = 1
+        chart.layer.borderColor = Constants.fillColor.cgColor
+        chart.backgroundColor = .offWhite
+        chart.translatesAutoresizingMaskIntoConstraints = false
+        chart.clipsToBounds = true
            return chart
        }()
     
@@ -114,11 +114,14 @@ final class ViewCode: UIView {
         setImage(url: "")
         }
     
+    //MARK: - constraint First Layer
+    
     func createCardLayer() {
         addSubview(cardView)
         cardView.fillSuperview(padding: Constants.cardInsets)
         }
     
+    //MARK: - constraint Second Layer
     func createLabelLayer() {
    
         cardView.addSubview(viewLogoCompany)
