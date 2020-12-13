@@ -261,17 +261,17 @@ final class ViewCode: UIView {
         pickerView.heightEqualToMultiplier(inView: cardView, multiplier: 0.2)
     }
     func createActivityIndicator() {
+        
         cardView.addSubview(activityIndicator)
+        
+        activityIndicator.centerX(inView: barChart)
+        activityIndicator.centerY(inView: barChart)
+        
         viewLogoCompany.addSubview(activityImageIndicator)
         
-        activityImageIndicator.centerYAnchor.constraint(equalTo: viewLogoCompany.centerYAnchor, constant: 0).isActive = true
-        activityImageIndicator.centerXAnchor.constraint(equalTo: viewLogoCompany.centerXAnchor, constant: 0).isActive = true
-        
-        
-        
-        activityIndicator.centerYAnchor.constraint(equalTo: barChart.centerYAnchor, constant: 0).isActive = true
-        activityIndicator.centerXAnchor.constraint(equalTo: barChart.centerXAnchor, constant: 0).isActive = true
-        
+        activityImageIndicator.centerX(inView: viewLogoCompany)
+        activityImageIndicator.centerY(inView: viewLogoCompany)
+       
     }
     
     func set(companyNameSet: String,symbolSet: String,priceNameSet: Double,priceChangeNameSet: Double) {
