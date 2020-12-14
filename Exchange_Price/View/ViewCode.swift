@@ -142,14 +142,6 @@ final class ViewCode: UIView {
 
         cardView.addSubview(companyNameLabel)
         companyNameLabel.anchor(top: cardView.topAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingRight: 25,height: 30)
-//        let companyStack = UIStackView(arrangedSubviews: [companyName,companyNameLabel])
-//        companyStack.axis = .horizontal
-//        companyStack.distribution = .equalSpacing
-//        companyStack.spacing = 16
-//        cardView.addSubview(companyStack)
-//        companyStack.anchor(top: cardView.topAnchor,left: cardView.leftAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingLeft: 25,paddingRight: 25,height: 30)
-        
-        
    
         cardView.addSubview(symbolName)
         symbolName.anchor(top: companyName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
