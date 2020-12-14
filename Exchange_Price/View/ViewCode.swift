@@ -38,11 +38,20 @@ final class ViewCode: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+//    private lazy var companyStack: UIStackView = {
+//
+//        let companyName = UILabel().myLabel()
+//        let companyNameLabel = UILabel().myLabel()
+//        let stack = UIStackView(arrangedSubviews: [companyName,companyNameLabel])
+//        stack.axis = .horizontal
+//        stack.distribution = .equalSpacing
+//        return stack
+//    }()
     
     let companyName: UILabel = {
             return UILabel().myLabel()
         }()
-    
+
     let companyNameLabel: UILabel = {
             return UILabel().myLabel()
         }()
@@ -130,15 +139,23 @@ final class ViewCode: UIView {
         
         cardView.addSubview(companyName)
         companyName.anchor(top: cardView.topAnchor,left: cardView.leftAnchor ,paddingTop: 80,paddingLeft: 25,height: 30)
-        
+
         cardView.addSubview(companyNameLabel)
         companyNameLabel.anchor(top: cardView.topAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingRight: 25,height: 30)
+//        let companyStack = UIStackView(arrangedSubviews: [companyName,companyNameLabel])
+//        companyStack.axis = .horizontal
+//        companyStack.distribution = .equalSpacing
+//        companyStack.spacing = 16
+//        cardView.addSubview(companyStack)
+//        companyStack.anchor(top: cardView.topAnchor,left: cardView.leftAnchor,right: cardView.rightAnchor,paddingTop: 80,paddingLeft: 25,paddingRight: 25,height: 30)
+        
+        
    
         cardView.addSubview(symbolName)
         symbolName.anchor(top: companyName.bottomAnchor,left: cardView.leftAnchor ,paddingTop: 30,paddingLeft: 25,height: 30)
 
         cardView.addSubview(symbolLabel)
-        symbolLabel.anchor(top: companyNameLabel.bottomAnchor,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
+        symbolLabel.anchor(top: companyName.bottomAnchor,right: cardView.rightAnchor,paddingTop: 30,paddingRight: 25,height: 30)
         
         
         cardView.addSubview(priceName)
